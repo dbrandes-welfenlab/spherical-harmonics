@@ -106,8 +106,8 @@ double HardcodedSH00(const Eigen::Vector3d& d) {
 }
 
 double HardcodedSH1n1(const Eigen::Vector3d& d) {
-  // -sqrt(3/(4pi)) * y
-  return -0.488603 * d.y();
+  // sqrt(3/(4pi)) * y
+  return 0.488603 * d.y();
 }
 
 double HardcodedSH10(const Eigen::Vector3d& d) {
@@ -116,8 +116,8 @@ double HardcodedSH10(const Eigen::Vector3d& d) {
 }
 
 double HardcodedSH1p1(const Eigen::Vector3d& d) {
-  // -sqrt(3/(4pi)) * x
-  return -0.488603 * d.x();
+  // sqrt(3/(4pi)) * x
+  return 0.488603 * d.x();
 }
 
 double HardcodedSH2n2(const Eigen::Vector3d& d) {
@@ -126,8 +126,8 @@ double HardcodedSH2n2(const Eigen::Vector3d& d) {
 }
 
 double HardcodedSH2n1(const Eigen::Vector3d& d) {
-  // -0.5 * sqrt(15/pi) * y * z
-  return -1.092548 * d.y() * d.z();
+  // 0.5 * sqrt(15/pi) * y * z
+  return 1.092548 * d.y() * d.z();
 }
 
 double HardcodedSH20(const Eigen::Vector3d& d) {
@@ -136,8 +136,8 @@ double HardcodedSH20(const Eigen::Vector3d& d) {
 }
 
 double HardcodedSH2p1(const Eigen::Vector3d& d) {
-  // -0.5 * sqrt(15/pi) * x * z
-  return -1.092548 * d.x() * d.z();
+  // 0.5 * sqrt(15/pi) * x * z
+  return 1.092548 * d.x() * d.z();
 }
 
 double HardcodedSH2p2(const Eigen::Vector3d& d) {
@@ -146,8 +146,8 @@ double HardcodedSH2p2(const Eigen::Vector3d& d) {
 }
 
 double HardcodedSH3n3(const Eigen::Vector3d& d) {
-  // -0.25 * sqrt(35/(2pi)) * y * (3x^2 - y^2)
-  return -0.590044 * d.y() * (3.0 * d.x() * d.x() - d.y() * d.y());
+  // 0.25 * sqrt(35/(2pi)) * y * (3x^2 - y^2)
+  return 0.590044 * d.y() * (3.0 * d.x() * d.x() - d.y() * d.y());
 }
 
 double HardcodedSH3n2(const Eigen::Vector3d& d) {
@@ -156,8 +156,8 @@ double HardcodedSH3n2(const Eigen::Vector3d& d) {
 }
 
 double HardcodedSH3n1(const Eigen::Vector3d& d) {
-  // -0.25 * sqrt(21/(2pi)) * y * (4z^2-x^2-y^2)
-  return -0.457046 * d.y() * (4.0 * d.z() * d.z() - d.x() * d.x()
+  // 0.25 * sqrt(21/(2pi)) * y * (4z^2-x^2-y^2)
+  return 0.457046 * d.y() * (4.0 * d.z() * d.z() - d.x() * d.x()
                              - d.y() * d.y());
 }
 
@@ -168,8 +168,8 @@ double HardcodedSH30(const Eigen::Vector3d& d) {
 }
 
 double HardcodedSH3p1(const Eigen::Vector3d& d) {
-  // -0.25 * sqrt(21/(2pi)) * x * (4z^2-x^2-y^2)
-  return -0.457046 * d.x() * (4.0 * d.z() * d.z() - d.x() * d.x()
+  // 0.25 * sqrt(21/(2pi)) * x * (4z^2-x^2-y^2)
+  return 0.457046 * d.x() * (4.0 * d.z() * d.z() - d.x() * d.x()
                              - d.y() * d.y());
 }
 
@@ -179,8 +179,8 @@ double HardcodedSH3p2(const Eigen::Vector3d& d) {
 }
 
 double HardcodedSH3p3(const Eigen::Vector3d& d) {
-  // -0.25 * sqrt(35/(2pi)) * x * (x^2-3y^2)
-  return -0.590044 * d.x() * (d.x() * d.x() - 3.0 * d.y() * d.y());
+  // 0.25 * sqrt(35/(2pi)) * x * (x^2-3y^2)
+  return 0.590044 * d.x() * (d.x() * d.x() - 3.0 * d.y() * d.y());
 }
 
 double HardcodedSH4n4(const Eigen::Vector3d& d) {
@@ -189,8 +189,8 @@ double HardcodedSH4n4(const Eigen::Vector3d& d) {
 }
 
 double HardcodedSH4n3(const Eigen::Vector3d& d) {
-  // -0.75 * sqrt(35/(2pi)) * y * z * (3x^2-y^2)
-  return -1.770131 * d.y() * d.z() * (3.0 * d.x() * d.x() - d.y() * d.y());
+  // 0.75 * sqrt(35/(2pi)) * y * z * (3x^2-y^2)
+  return 1.770131 * d.y() * d.z() * (3.0 * d.x() * d.x() - d.y() * d.y());
 }
 
 double HardcodedSH4n2(const Eigen::Vector3d& d) {
@@ -199,8 +199,8 @@ double HardcodedSH4n2(const Eigen::Vector3d& d) {
 }
 
 double HardcodedSH4n1(const Eigen::Vector3d& d) {
-  // -0.75 * sqrt(5/(2pi)) * y * z * (7z^2-3)
-  return -0.669047 * d.y() * d.z() * (7.0 * d.z() * d.z() - 3.0);
+  // 0.75 * sqrt(5/(2pi)) * y * z * (7z^2-3)
+  return 0.669047 * d.y() * d.z() * (7.0 * d.z() * d.z() - 3.0);
 }
 
 double HardcodedSH40(const Eigen::Vector3d& d) {
@@ -210,8 +210,8 @@ double HardcodedSH40(const Eigen::Vector3d& d) {
 }
 
 double HardcodedSH4p1(const Eigen::Vector3d& d) {
-  // -0.75 * sqrt(5/(2pi)) * x * z * (7z^2-3)
-  return -0.669047 * d.x() * d.z() * (7.0 * d.z() * d.z() - 3.0);
+  // 0.75 * sqrt(5/(2pi)) * x * z * (7z^2-3)
+  return 0.669047 * d.x() * d.z() * (7.0 * d.z() * d.z() - 3.0);
 }
 
 double HardcodedSH4p2(const Eigen::Vector3d& d) {
@@ -221,8 +221,8 @@ double HardcodedSH4p2(const Eigen::Vector3d& d) {
 }
 
 double HardcodedSH4p3(const Eigen::Vector3d& d) {
-  // -0.75 * sqrt(35/(2pi)) * x * z * (x^2 - 3y^2)
-  return -1.770131 * d.x() * d.z() * (d.x() * d.x() - 3.0 * d.y() * d.y());
+  // 0.75 * sqrt(35/(2pi)) * x * z * (x^2 - 3y^2)
+  return 1.770131 * d.x() * d.z() * (d.x() * d.x() - 3.0 * d.y() * d.y());
 }
 
 double HardcodedSH4p4(const Eigen::Vector3d& d) {
