@@ -554,6 +554,7 @@ double EvalSH(int l, int m, const Eigen::Vector3d& dir) {
           case 1:
             return HardcodedSH1p1(dir);
         }
+        [[fallthrough]];
       case 2:
         switch (m) {
           case -2:
@@ -567,6 +568,7 @@ double EvalSH(int l, int m, const Eigen::Vector3d& dir) {
           case 2:
             return HardcodedSH2p2(dir);
         }
+        [[fallthrough]];
       case 3:
         switch (m) {
           case -3:
@@ -584,6 +586,7 @@ double EvalSH(int l, int m, const Eigen::Vector3d& dir) {
           case 3:
             return HardcodedSH3p3(dir);
         }
+        [[fallthrough]];
       case 4:
         switch (m) {
           case -4:
